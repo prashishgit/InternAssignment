@@ -9,38 +9,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Minimal sign up form</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-
-
-  
-  
-      <link rel="stylesheet" href="register.css">
+  <!-- LINEARICONS -->
+		<link rel="stylesheet" href="Registraion/fonts/linearicons/style.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="Registraion/css/style.css">
 
   
 </head>
 
 <body>
+    <br/>
+<div class="wrapper">
+			<div class="inner">
+				
+				<form action="DatabaseInsert.jsp" method="get">
+					<h3>New Account?</h3>
+					<div class="form-holder">
+						<span class="lnr lnr-user"></span>
+                                                <input type="text" class="form-control" placeholder="Username" name="username">
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-phone-handset"></span>
+						<input type="text" class="form-control" placeholder="Password" name="password" id="password" type="password">
+					</div>
+                                        <div class="form-holder">
+						<span class="lnr lnr-phone-handset"></span>
+						<input type="text" class="form-control" placeholder="Confrim Password" name="cpassword" id="cpassword" type="password">
+					</div>
+                                        <button>
+						<span>Register</span>
+					</button>
+                                 </form>
+                        </div>
+    </div>
+    
+    
+    
+    
+    
+ 
 
-  <form action="DatabaseInsert.jsp" method="get">
-  <h1>Sign up</h1><br/>
-
-  <span class="input"></span>
-  <input type="text" name="username" placeholder="Username" title="Format: Xx[space]Xx (e.g. Alex Cican)" autofocus autocomplete="off" required  />
-  
-  <span id="passwordMeter"></span>
-  <input type="password" name="password" id="password" placeholder="Password" title="Password min 8 characters. At least one UPPERCASE and one lowercase letter" required />
- <span id="passwordMeter"></span>
-  <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" title="Password min 8 characters. At least one UPPERCASE and one lowercase letter" required />
-
-  <button type="submit" value="Sign Up" title="Submit form" class="icon-arrow-right"><span>Sign up</span></button>
-</form>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  
-
-    <script  src="js/index.js"></script>
-
-
+<script src="Registraion/js/jquery-3.3.1.min.js"></script>
+		<script src="Registraion/js/main.js"></script>
 
 
 </body>

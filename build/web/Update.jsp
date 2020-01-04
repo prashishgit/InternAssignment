@@ -26,20 +26,38 @@ while(result.next()){
 %>
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="Registraion/fonts/linearicons/style.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="Registraion/css/style.css">
+    </head>
+    
 <body>
-<h1>Update data from database in jsp</h1>
+     <br/>
+<div class="wrapper">
+			<div class="inner">
+
 <form method="post" action="Updatebackend.jsp">
+    <h3>Update Account?</h3>
+    <div class="form-holder">
+           
 <input type="hidden" name="id" value="<%=result.getString("id") %>">
 
-<br>
-UserName:<br>
-<input type="text" name="username" value="<%=result.getString("username") %>">
-<br>
-Password:<br>
-<input type="text" name="password" value="<%=result.getString("password") %>">
-<br>
-<br><br>
-<input type="submit" value="Update">
+        <span class="lnr lnr-user"></span>
+            <input type="text" class="form-control" placeholder="Username" name="username" value="<%=result.getString("username") %>">
+    </div>
+    <div class="form-holder">
+            <span class="lnr lnr-phone-handset"></span>
+            <input type="text" class="form-control" placeholder="Password" name="password" id="password" type="password" value="<%=result.getString("password") %>">
+    </div>
+   
+    <button>
+            <span>Update</span>
+    </button>
+
+    
+  
 </form>
 <%
 }
@@ -48,5 +66,12 @@ con.close();
 e.printStackTrace();
 }
 %>
+</div>
+</div>
+
+<script src="Registraion/js/jquery-3.3.1.min.js"></script>
+		<script src="Registraion/js/main.js"></script>
+
+
 </body>
 </html>

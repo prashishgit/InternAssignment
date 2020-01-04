@@ -33,12 +33,18 @@ ResultSet resultSet = null;
 <!DOCTYPE html>
 <html>
     <head>
+        <!--<link rel="stylesheet" href="css/reset.css">-->
+        <link rel="stylesheet" href="login/reset.css">
+
+        <!--<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />-->
+        <link rel="stylesheet" href="login/style.css" media="screen" type="text/css" />
+
   </head>
      <body>
         <form action="loginServlet" method="POST">
             <div class="wrap">
                 <div class="avatar">
-                    <img src="E:\Apex Course\5th sem\advance java\JavaProject\web\images\login.png">
+                    <img src="login/login.png">
                 </div>
                 <input type="text" name="username" placeholder="username" required>
                 <div class="bar">
@@ -54,7 +60,7 @@ ResultSet resultSet = null;
             </div>
         </form>
         <!--        <script src="js/index.js"></script>-->
-        <script src="index.js"></script>
+        <script src="login/index.js"></script>
 
     </body>
 </html>
