@@ -40,10 +40,25 @@ ResultSet resultSet = null;
         <!--<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />-->
         <link rel="stylesheet" href="login/style.css" media="screen" type="text/css" />
         <style>
-            #register
-            {
-                background-color: #a9a9a9;
-            }
+            #button {
+    display: block;
+    width: 100%;
+    border-radius: 7px;
+    
+   
+    border: none;
+    color: #51771a;
+    margin-top: -5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    outline: none;
+    font-size: 13px;
+    border-bottom: 3px solid #307d63;
+    cursor: pointer;
+    background-color: #a9a9a9;
+     text-align: center;
+}
+           
         </style>
   </head>
      <body>
@@ -62,7 +77,7 @@ ResultSet resultSet = null;
              
                 <!--<button>Sign in</button>-->
                 <div class="anchor" style="margin-top: 15px">
-                     <button id="register"><a href="Register.jsp" class="btn-primmary" style="text-decoration: none;">Registration</a></button>
+                  <a id="button" href="Register.jsp" class="btn-primmary" style="text-decoration: none;"> Registration</a>
                 </div>
             </div>
         </form>
