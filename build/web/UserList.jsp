@@ -32,9 +32,9 @@ ResultSet resultSet = null;
 <table class="table table-striped">
     <thead>
 <tr>
-<td>UserName</td>
-<td>Password</td>
-<td></td>
+<th>UserName</th>
+<th>Password</th>
+<th>Action</th>
 </tr>
 </thead>
 <%

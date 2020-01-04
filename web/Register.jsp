@@ -30,12 +30,12 @@
                                                 <input type="text" class="form-control" placeholder="Username" name="username">
 					</div>
 					<div class="form-holder">
-						<span class="lnr lnr-phone-handset"></span>
-						<input type="text" class="form-control" placeholder="Password" name="password" id="password" type="password">
+						<span class="lnr lnr-lock"></span>
+						<input type="password" class="form-control" placeholder="Password" name="password" id="password" type="password">
 					</div>
                                         <div class="form-holder">
-						<span class="lnr lnr-phone-handset"></span>
-						<input type="text" class="form-control" placeholder="Confrim Password" name="cpassword" id="cpassword" type="password">
+						<span class="lnr lnr-lock"></span>
+						<input type="password" class="form-control" placeholder="Confrim Password" name="cpassword" id="cpassword" type="password">
 					</div>
                                         <button>
 						<span>Register</span>

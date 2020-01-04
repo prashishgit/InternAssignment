@@ -34,11 +34,17 @@ ResultSet resultSet = null;
 <html>
     <head>
         <!--<link rel="stylesheet" href="css/reset.css">-->
+        
         <link rel="stylesheet" href="login/reset.css">
 
         <!--<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />-->
         <link rel="stylesheet" href="login/style.css" media="screen" type="text/css" />
-
+        <style>
+            #register
+            {
+                background-color: #a9a9a9;
+            }
+        </style>
   </head>
      <body>
         <form action="loginServlet" method="POST">
@@ -52,10 +58,11 @@ ResultSet resultSet = null;
                 </div>
                 <input type="password" name="password" placeholder="password" required>
                 <a href="" class="forgot_link">forgot ?</a>
-                <button>Login In</button>
+                <button>Login</button>
+             
                 <!--<button>Sign in</button>-->
-                <div class="anchor">
-                    <a href="Register.jsp">Registration</a>
+                <div class="anchor" style="margin-top: 15px">
+                     <button id="register"><a href="Register.jsp" class="btn-primmary" style="text-decoration: none;">Registration</a></button>
                 </div>
             </div>
         </form>

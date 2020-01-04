@@ -48,8 +48,8 @@ while(result.next()){
             <input type="text" class="form-control" placeholder="Username" name="username" value="<%=result.getString("username") %>">
     </div>
     <div class="form-holder">
-            <span class="lnr lnr-phone-handset"></span>
-            <input type="text" class="form-control" placeholder="Password" name="password" id="password" type="password" value="<%=result.getString("password") %>">
+            <span class="lnr lnr-lock"></span>
+            <input type="password" class="form-control" placeholder="Password" name="password" id="password" type="password" value="<%=result.getString("password") %>">
     </div>
    
     <button>
